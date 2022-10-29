@@ -1,0 +1,43 @@
+.address-footer {
+	// margin: auto;	
+	padding-top: 60px;
+	padding-bottom: 60px;
+	background: #2f303a;
+	display: flex;
+		
+}
+
+.address-box {
+	margin-right: 70px;
+	
+}
+
+			
+ .address{
+	padding: 0;
+	padding-top: 20px;
+	list-style: none;
+ }
+
+.address__item-text,
+.address__item:not(:last-child) {
+	margin-bottom: 9px;
+}
+
+.address__item-text .address__link {
+	color: $primariBgColor;
+}
+
+.address__link {
+	font-style: normal;
+	font-size: 14px;
+	line-height: 1.71;
+	letter-spacing: 0.03em;
+
+	text-decoration: none;
+	color: rgba(255, 255, 255, 0.6);
+}
+.bottom-box {
+	display: flex;	
+	align-items: baseline;
+}

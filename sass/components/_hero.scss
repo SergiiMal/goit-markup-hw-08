@@ -1,0 +1,47 @@
+.hero {
+  text-align: center;
+  padding-top: 200px;
+  padding-bottom: 200px;
+
+  .hero__title {
+    margin-bottom: 30px; 
+    @include font(900, 44px, 1.36, 0.06em);  
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: $primariBgColor;
+  }
+  .hero__btn {
+    min-width: 216px;
+    padding: 10px 32px;
+ 
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    text-align: center;
+    letter-spacing: 0.06em;
+
+    color: $primariBgColor;
+    border-color: $accentColor;
+    background-color: $defaultColor;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+
+    transition: background-color $timingFunction;
+
+	&:hover,
+		&:focus {
+			background-color: $accentColor;
+			transition: $timingFunction;
+		}
+	
+		&:active {
+			background-color: $primariBgColor;
+			color: $defaultColor;
+			transition: $timingFunction;
+		}
+  }
+
+}

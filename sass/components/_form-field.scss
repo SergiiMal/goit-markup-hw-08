@@ -1,0 +1,141 @@
+.form-field {
+	display: flex;
+	flex-direction: column;
+	align-items: start;
+
+	margin-bottom: 10px;
+
+	&::placeholder {
+			font-weight: 400;
+			font-size: 12px;
+			line-height: 1.16;
+			letter-spacing: 0.01em;
+	
+			color: rgba(117, 117, 117, 0.5);
+		}
+}
+
+.form-field__label {
+	font-weight: 400;
+	font-size: 12px;
+	line-height: 1.16;
+
+	letter-spacing: 0.01em;
+	margin-bottom: 4px;
+
+	color: $primaryColor;
+}
+
+.box-input {
+	position: relative;
+	width: 100%;
+}
+
+.form-field__input {
+	width: 448px;
+	height: 40px;
+
+	padding-left: 42px;
+	outline: none;
+	border: 1px solid rgba(33, 33, 33, 0.2);
+	border-radius: 4px;
+
+	color: $titleColor;
+&:last-child {
+		padding-left: 16px;
+		padding-top: 12px;
+	}
+	&:focus,
+		&:hover {
+			border-color: #188ce8;
+			transition: $timingFunction;
+		}
+						
+}
+
+.form-field__icon {
+	position: absolute;
+	top: 20%;
+	left: 12px;
+	display: inline-block;
+	transform: translateY(20%);
+			.form-field__input:focus~ & {
+					fill: $accentColor;
+				}
+}
+
+.comment {
+	margin-bottom: 20px;
+}
+
+.comment textarea {
+	width: 448px;
+	height: 120px;
+	border: 1px solid rgba(33, 33, 33, 0.2);
+	border-radius: 4px;
+	resize: none;
+}
+
+
+
+.form-order__checkbox-input {
+	margin-left: 12px;
+	appearance: none;
+
+
+&:checked~.form-order__checkbox-icon {
+	background-color: $defaultColor;
+	border-radius: 2px;
+	background-image: url(../img/icon-check.svg);
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: bottom;
+	background-origin: border-box;	
+	fill: $accentColor;
+}
+&:focus~.form-order__checkbox-icon,
+&:hover~.form-order__checkbox-icon {
+	fill: $accentColor;
+	transition: $timingFunction;
+}
+}
+
+
+
+.form-order__checkbox-label {
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 1.71;
+
+	letter-spacing: 0.03em;
+
+	color: $primaryColor;
+}
+
+.form-order__accept-btn {
+	min-width: 200px;
+	height: 50px;
+	font-weight: 700;
+	font-size: 16px;
+	line-height: 1.87;
+	letter-spacing: 0.06em;
+
+	margin-top: 30px;
+	
+	color: $primariBgColor;
+	background: $defaultColor;
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+	border-radius: 4px;
+	border: none;
+
+&:hover,
+&:focus {
+	background-color: $defaultColor;
+	transition:$timingFunction;
+}
+}
+.form-order__terms {
+	text-decoration: underline;
+	text-underline-offset: 3px;
+	color: $defaultColor;
+}

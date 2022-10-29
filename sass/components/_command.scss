@@ -1,0 +1,105 @@
+.commands {
+	background: #f5f4fa;
+	padding-bottom: 94px;
+	padding-top: 94px;
+}
+
+.commands__list {
+	display: flex;
+	text-align: center;
+	list-style: none;
+	padding: 0;
+}
+
+.commands__title {
+	margin-bottom: 50px;
+
+	font-weight: 700;
+	font-size: 36px;
+	line-height: 1.16;
+	text-align: center;
+	letter-spacing: 0.03em;
+}
+
+
+.command__items {
+	background: #FFFFFF;
+	box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+		0px 2px 1px rgba(0, 0, 0, 0.2);
+	border-radius: 0px 0px 4px 4px;
+
+	&:not(:last-child) {
+			margin-right: 30px;
+		}
+}
+.command__list {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	width: 206px;
+	height: 44px;
+
+	margin-left: 32px;
+	margin-bottom: 30px;
+	list-style: none;
+}
+
+.command__name {
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 1.18;
+	text-align: center;
+	letter-spacing: 0.03em;
+
+	margin-bottom: 10px;
+	padding-top: 30px;
+
+	color: $titleColor;
+}
+
+.command__profession {
+	font-size: 16px;
+	line-height: 1.18;
+	letter-spacing: 0.03em;
+	text-align: center;
+	margin-bottom: 16px;
+
+	color: $primaryColor;
+}
+
+.command__item {
+	background-color: $primariBgColor;
+}
+
+.command__link {
+	width: 44px;
+	height: 44px;
+	border-radius: 50%;
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-right: 10px;
+	color: #afb1b8;
+
+	transition-property: background-color;
+	transition-duration: 250ms;
+
+
+&:hover,
+&:focus {
+	background-color: $accentColor;
+	transition: $timingFunction;
+}
+
+&:hover .command__icon,
+&:focus .command__icon {
+	fill: $primariBgColor;
+	transition:$timingFunction;
+}
+}
+
+.command__icon {
+	fill: currentColor;
+}

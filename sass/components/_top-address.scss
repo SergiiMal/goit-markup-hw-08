@@ -1,0 +1,48 @@
+.top-address {
+  display: flex;
+  margin-left: auto;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+  align-items: center;
+  justify-content: center;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+
+  list-style: none;  
+ }
+ .top-address__item{
+  padding: 32px 0;
+ }
+ 
+  .top-address__item:not(:last-child) {
+    margin-right: 50px;
+}
+  
+  .top-address__link {
+    display: flex;
+
+    color: $primaryColor;
+    text-decoration: none;
+    transition-property: background-color;
+    transition-duration: 250ms;
+
+  &:hover,
+    &:focus {
+      color: $accentColor;
+    }
+
+ &:hover .top-icon,
+ &:focus .top-icon {
+   fill: $accentColor;
+ }
+ 	} 
+    .top-icon {
+      margin-right: 10px;
+      fill: $primaryColor;		
+    }
+  
+   
+
