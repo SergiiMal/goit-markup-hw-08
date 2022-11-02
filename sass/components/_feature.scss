@@ -1,5 +1,10 @@
 .feature {
-	padding-top: 94px;
+	// padding-top: 94px;
+	padding: 60px 0;
+	@include media(1200px){
+		padding-top: 94px;
+		padding-bottom: 118px;
+	}
 }
 
 .feature__list {
@@ -12,7 +17,15 @@
 
 .feature__item{
 	// width: calc((100% - 90px) / 4);
-	width: 100%;
+	@include calc(1);
+
+	@include media(768px){
+		@include calc(2);
+	}
+
+	@include media(1200px){
+		@include calc(4);
+	}
 }
 
 .feature-box {
