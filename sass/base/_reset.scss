@@ -32,6 +32,12 @@ body {
 
 	color: var(--title-text-color);
 }
+img{
+	display: block;
+	max-width: 100%;
+	margin:auto;
+	width: 100%;
+}
 
 address {
 	font-style: normal;
