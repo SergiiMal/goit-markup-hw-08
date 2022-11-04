@@ -1,6 +1,12 @@
 .join {
-  margin-right: 93px;
- 
+  // margin-right: 93px;
+  margin:60px 0;
+  @include media (768px){
+    margin: 0;
+  }
+  @include media(1200px){
+
+  }
 }
 
 .join__title {
@@ -10,22 +16,33 @@
   font-size: 14px;
   line-height: 16px;
   letter-spacing: 0.03em;
+  text-align: center;
   text-transform: uppercase;
 
   color: $primariBgColor;
+
+  @include media (1200px){
+    display: flex;
+  }
 }
 
 .join__list {
-  width: 206px;
-  height: 44px;
+  // width: 206px;
+  // height: 44px; 
   list-style: none;
   display: flex;
+
   padding: 0;
+  gap: 10px;
 }
 
-.join__item:not(:last-child) {
-  margin-right: 10px;
+.join__item{
+ 
 }
+
+// .join__item:not(:last-child) {
+//   margin-right: 10px;
+// }
 
 .join__link {
   width: 44px;

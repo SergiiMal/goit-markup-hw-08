@@ -1,7 +1,16 @@
 .subscribe {
-	width: 570px;
-	margin-left: auto;
-	
+	// width: 100%;
+	// width: 570px;
+	// margin-left: auto;
+	@include media (768px){
+		padding-top: 60px;
+	}
+		@include media(1200px) {
+			// margin-left: auto;
+			
+		}
+
+		
 }
 
 .subscribe__text {
@@ -11,26 +20,39 @@
 	font-size: 14px;
 	line-height: 1.14;
 	letter-spacing: 0.03em;
+	text-align: center;
 	text-transform: uppercase;
 
 	color: $primariBgColor;
+
+	@include media (1200px){
+		display: flex;
+	}
 }
 
 .subscribe__form {
 	display: flex;
+	flex-direction: column;
+	align-items: center;
+
+	@include media(1200px){
+		flex-direction:row;
+		
+	}
+	
 }
 
 .subscribe__input {
 	align-items: center;
 	letter-spacing: 0.03em;
-
-	width: 358px;
+	width:100%;
+	// min-width: 358px;
 	height: 50px;
 
 	font-weight: 400;
 	font-size: 1.25;
 	line-height: 20px;
-	margin-right: 12px;
+	
 	padding-left: 16px;
 
 	background-color: #2f303a;
@@ -38,14 +60,25 @@
 	border: 1px solid rgba(255, 255, 255, 0.3);
 	filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
 	border-radius: 4px;
+
+	@include media (480px) {
+		min-width: 450px;
+	}
+	@include media (1200px){
+		min-width: 358px;
+		margin-right: 12px;
+	}
+
 }
 
 .subscribe__btn-send {
 	display: flex;
-
 	align-items: center;
 	justify-content: center;
-	width: 200px;
+	margin-top: 20px;
+	// padding-bottom: 60px;
+	// max-width: 200px;
+	// width: 200px;
 	height: 50px;
 
 	font-weight: 700;
@@ -58,8 +91,12 @@
 	border-radius: 4px;
 	color: $primariBgColor;
 	border: none;
-	padding: 0;
-
+	// padding: 0;
+	padding: 0 24px;
+	@include media (1200px){
+		padding: 0 24px;
+		margin-top: 0;
+	}
 
 &:hover,
 &:focus {

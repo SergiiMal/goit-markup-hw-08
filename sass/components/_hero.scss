@@ -1,18 +1,21 @@
 .hero {
   text-align: center;
-  padding: 118px 0;
+  padding: 118px 0; 
+  width: 100%; 
 
   @include media(1200px){
     padding: 200px 0;
   }
 
   .hero__title {
+    padding:  0;
     margin-bottom: 30px; 
-    // @include font(900, 44px, 1.36, 0.06em);  
+      
     font-weight: 900;
     font-size: 26px;
     line-height: 1.61;
     letter-spacing: 0.06em;
+    // text-align: center;
     text-transform: uppercase;
     color: $primariBgColor;
 
@@ -23,8 +26,8 @@
   }
 
   .hero__btn {
-    min-width: 216px;
-    padding: 10px 32px;
+    // min-width: 216px;
+    padding: 10px 24px;
  
     font-weight: 700;
     font-size: 16px;
@@ -37,8 +40,12 @@
     background-color: $defaultColor;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
-
+    border: none;
     transition: background-color $timingFunction;
+
+    @include media(1200px){          
+          padding: 10px 32px;
+    }
 
 	&:hover,
 		&:focus {

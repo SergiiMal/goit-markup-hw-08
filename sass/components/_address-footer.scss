@@ -1,15 +1,34 @@
 .address-footer {
-	// margin: auto;	
-	padding-top: 60px;
-	padding-bottom: 60px;
+	margin: auto;	
+	padding:60px 0;
 	background: #2f303a;
-	display: flex;
-		
+	display: flex;		
 }
 
 .address-box {
-	margin-right: 70px;
+	// margin-right: 70px;
+	text-align: center;
+	@include media(1200px){
+		
+		// display: flex;
+		text-align:start;
+	}
 	
+}
+
+.address-footer__logo{
+	// margin-right: 93px;
+	
+		// padding-top: 24px;
+		// margin-bottom: 25px;
+	
+		font-family: "Raleway", sans-serif;
+		font-size: 26px;
+		line-height: 1.19;
+		letter-spacing: 0.03em;
+		text-decoration: none;
+	
+		color: $accentColor;
 }
 
 			
@@ -17,8 +36,11 @@
 	padding: 0;
 	padding-top: 20px;
 	list-style: none;
- }
-
+ 
+	@include media(1200px){
+		align-items: start;
+}
+}
 .address__item-text,
 .address__item:not(:last-child) {
 	margin-bottom: 9px;
@@ -39,5 +61,20 @@
 }
 .bottom-box {
 	display: flex;	
-	align-items: baseline;
+	flex-direction:column;
+	align-items: center;
+	// align-items: baseline;
+
+	@include media(768px){			
+		flex-direction:row;
+		flex-wrap: wrap;
+		align-items: baseline;
+		justify-content:space-evenly;		
+	}
+	
+	@include media (1200px){		
+		// flex-wrap: wrap;
+		justify-content:space-between;
+		
+	}
 }
