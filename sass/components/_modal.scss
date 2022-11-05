@@ -5,9 +5,9 @@
 
 	top: 50%;
 	left: 50%;
-	min-width: 528px;
-	min-height: 581px;
-
+	// min-width: 450px;
+	min-height: 400px;
+	width: 450px;
 	padding: 40px;
 
 	background-color: #ffffff;
@@ -17,6 +17,11 @@
 
 	transform: translate(-50%, -50%) scale(1);
 	transition: $timingFunction;
+
+	// @include media(480px){
+	// 	min-width: 450px;
+	// 	min-height: 609px;
+	// }
 }
 
 .modal__btn-close {

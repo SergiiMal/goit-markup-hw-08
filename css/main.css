@@ -721,8 +721,8 @@ address {
           justify-content: center;
   top: 50%;
   left: 50%;
-  min-width: 528px;
-  min-height: 581px;
+  min-height: 400px;
+  width: 450px;
   padding: 40px;
   background-color: #ffffff;
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -813,7 +813,7 @@ address {
 }
 
 .form-order {
-  width: 448px;
+  min-width: 370px;
 }
 
 .form-order__text {
@@ -890,7 +890,7 @@ address {
 }
 
 .form-field__input {
-  width: 448px;
+  min-width: 370px;
   height: 40px;
   padding-left: 42px;
   outline: none;
@@ -925,11 +925,36 @@ address {
 }
 
 .comment textarea {
-  width: 448px;
+  min-width: 370px;
   height: 120px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   resize: none;
+}
+
+.comment ::-webkit-input-placeholder {
+  font-size: 14px;
+  line-height: 1.17;
+}
+
+.comment ::-moz-placeholder {
+  font-size: 14px;
+  line-height: 1.17;
+}
+
+.comment :-ms-input-placeholder {
+  font-size: 14px;
+  line-height: 1.17;
+}
+
+.comment ::-ms-input-placeholder {
+  font-size: 14px;
+  line-height: 1.17;
+}
+
+.comment ::placeholder {
+  font-size: 14px;
+  line-height: 1.17;
 }
 
 .form-order__checkbox-input {
@@ -956,10 +981,16 @@ address {
 
 .form-order__checkbox-label {
   font-weight: 400;
-  font-size: 14px;
-  line-height: 1.71;
+  font-size: 12px;
+  line-height: 1.16;
   letter-spacing: 0.03em;
   color: #757575;
+}
+@media screen and (min-width: 1200px) {
+  .form-order__checkbox-label {
+    font-size: 14px;
+    line-height: 1.71;
+  }
 }
 
 .form-order__accept-btn {
