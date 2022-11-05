@@ -33,7 +33,7 @@
 }
 
 .form-field__input {
-	// min-width: 448px;
+	
 	min-width: 370px;
 	height: 40px;
 
@@ -43,6 +43,9 @@
 	border-radius: 4px;
 
 	color: $titleColor;
+	@include media(1200px){
+		min-width: 448px;
+	}
 &:last-child {
 		padding-left: 16px;
 		padding-top: 12px;
@@ -52,9 +55,7 @@
 			border-color: #188ce8;
 			transition: $timingFunction;
 		}
-	// @include media(480px){
-	// 	min-width: 370px;
-	// }					
+					
 }
 
 .form-field__icon {
@@ -79,6 +80,9 @@
 	border: 1px solid rgba(33, 33, 33, 0.2);
 	border-radius: 4px;
 	resize: none;
+	@include media(1200px){
+		min-width: 448px;
+	}
 }
 .comment ::placeholder{
 	font-size: 14px;
