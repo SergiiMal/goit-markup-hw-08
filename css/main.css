@@ -307,6 +307,10 @@ address {
   font-style: normal;
 }
 
+.no-scroll {
+  overflow: hidden;
+}
+
 .page-header {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -319,6 +323,7 @@ address {
 .menu-open-btn {
   display: block;
   margin-left: auto;
+  background-color: transparent;
   border: none;
   background-color: blueviolet;
 }
@@ -337,6 +342,19 @@ address {
   width: 100vw;
   height: 100vh;
   z-index: 1;
+}
+.mob-menu > .container-mob {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  overflow: auto;
 }
 
 .menu-cross-btn {
@@ -380,22 +398,30 @@ address {
 }
 
 .mob-contact {
-  padding-left: 40px;
+  padding-left: 25px;
 }
 
 .mob-soc {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
   padding-top: 64px;
-  padding-right: 48px;
   padding-left: 25px;
 }
 
+.mob-soc__item:not(:last-child) {
+  padding-right: 10px;
+  border-right: 1px solid rgba(33, 33, 33, 0.2);
+}
+.mob-soc__item:not(:first-child) {
+  padding-left: 10px;
+}
+
 .mob-soc__link {
+  position: relative;
   font-size: 18px;
   line-height: 1.22;
   letter-spacing: 0.02em;
