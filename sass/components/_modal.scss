@@ -16,12 +16,7 @@
 	border-radius: 4px;
 
 	transform: translate(-50%, -50%) scale(1);
-	transition: $timingFunction;
-
-	// @include media(480px){
-	// 	min-width: 450px;
-	// 	min-height: 609px;
-	// }
+	transition: $timingFunction;	
 }
 
 .modal__btn-close {
