@@ -2,7 +2,7 @@
 	display: flex;
 	align-items: center;
 
-@include media(468px){
+@include media(480px){
 .menu-open-btn{
 	display: block;
 		margin-left: auto;
@@ -12,12 +12,12 @@
 }
 } 
 
-
 .container-mob{
 	width: 100%;
 	padding: 10px 15px;
 	margin: 0 auto;
 }
+
 .mob-menu {
 	position:fixed;
 	top: 0;
@@ -109,16 +109,4 @@
 	color: $accentColor;
 	transition: $timingFunction;
 }
-// 	&:not(:last-child)::after {
-// 	content: "";
-// 	position: absolute;
-// 	display: block;
-// 	top: 0;
-// 	right: 0;
-// 	height: 100%;
-// 	background-size: cover;
-// 	border: 1px solid rgba(33, 33, 33, 0.2);
-// 	transform: rotate(180deg);
-// 	margin-right:-10px;
-// }
 }
