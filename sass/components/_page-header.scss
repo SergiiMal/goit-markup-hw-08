@@ -1,7 +1,8 @@
 .page-header{
 	display: flex;
 	align-items: center;
-}
+
+@include media(468px){
 .menu-open-btn{
 	display: block;
 		margin-left: auto;
@@ -10,6 +11,7 @@
 	background-color:white;
 }
 
+} 
 .container-mob{
 	width: 100%;
 	padding: 10px 15px;
@@ -118,3 +120,4 @@
 // 	transform: rotate(180deg);
 // 	margin-right:-10px;
 // }
+}

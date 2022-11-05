@@ -11,14 +11,30 @@
   line-height: 1.14;
   letter-spacing: 0.02em;
 
-  list-style: none;  
+  list-style: none;
+
+  @include media(768px){
+    display: flex;
+    flex-direction: column;  
+    align-items: stretch;  
+    margin-left: auto;
+  } 
  }
  .top-address__item{
-  padding: 32px 0;
+  padding: 32px 0;  
+  @include media(768px) {
+    display: flex;
+    padding: 10px;
+    
+  }
  }
  
   .top-address__item:not(:last-child) {
     margin-right: 50px;
+    @include media(768px) {
+      margin: 0;
+    }
+
 }
   
   .top-address__link {
