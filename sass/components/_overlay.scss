@@ -5,35 +5,29 @@
 	margin-right: auto;
 	content: "";
 	background-image: $bg-gradient,
-		url(../img/overlay480.jpg);
+		url(/img/480/overlay480.jpg);
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center;
 	
-	@media (min-device-pixel-ratio: 2),
-		(min-resolution: 192dpi),
-		(min-resolution: 2dppx) {
-			background-image: $bg-gradient, url(/img/overlay480-2x.jpg);			
+	@include retina {
+			background-image: $bg-gradient, url(/img/480/overlay480-2x.jpg);			
 		}
 
 	@include media(768px){
 		background-image: $bg-gradient,
-				url(../img/overlay768.jpg);
-		@media (min-device-pixel-ratio: 2),
-			(min-resolution: 192dpi),
-			(min-resolution: 2dppx) {
-				background-image: $bg-gradient, url(/img/overlay768-2x.jpg);
+				url(/img/768/overlay768.jpg);
+		@include retina{
+				background-image: $bg-gradient, url(/img/768/overlay768-2x.jpg);
 			}
 	}
 
 		@include media(1200px) {
 			height:600px;
 			background-image: $bg-gradient,
-				url(../img/overlay.jpg);
-				@media (min-device-pixel-ratio: 2),
-					(min-resolution: 192dpi),
-					(min-resolution: 2dppx) {
-						background-image: $bg-gradient, url(/img/overlay2x.jpg);
+				url(/img/1200/overlay.jpg);
+				@include retina{
+						background-image: $bg-gradient, url(/img/1200/overlay2x.jpg);
 					}
 		}
 }
