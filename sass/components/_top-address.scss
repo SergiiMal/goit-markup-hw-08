@@ -19,20 +19,29 @@
     align-items: stretch;  
     margin-left: auto;
   } 
+
+    @include media(1200px) {
+      flex-direction: row;
+    }
  }
  .top-address__item{
   padding: 32px 0;  
   @include media(768px) {
     display: flex;
-    padding: 10px;
-    
+    padding: 10px;    
   }
+    @include media(1200px) {
+      padding: 32px 0;      
+    }
  }
  
   .top-address__item:not(:last-child) {
     margin-right: 50px;
     @include media(768px) {
       margin: 0;
+    }
+    @include media (1200px){
+      margin-right: 32px;
     }
 
 }

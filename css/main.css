@@ -538,6 +538,14 @@ address {
     margin-left: auto;
   }
 }
+@media screen and (min-width: 1200px) {
+  .top-address {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+}
 
 .top-address__item {
   padding: 32px 0;
@@ -550,6 +558,11 @@ address {
     padding: 10px;
   }
 }
+@media screen and (min-width: 1200px) {
+  .top-address__item {
+    padding: 32px 0;
+  }
+}
 
 .top-address__item:not(:last-child) {
   margin-right: 50px;
@@ -557,6 +570,11 @@ address {
 @media screen and (min-width: 768px) {
   .top-address__item:not(:last-child) {
     margin: 0;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .top-address__item:not(:last-child) {
+    margin-right: 32px;
   }
 }
 
