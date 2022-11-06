@@ -14,6 +14,9 @@
 			clip-path: inset(50%);
 			margin: -1px;
 		}
+		@include media(1200px){
+			padding-top: 0;
+		}
 }
 
 .section__list {

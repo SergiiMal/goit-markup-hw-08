@@ -1,17 +1,12 @@
-.clients {
-	// padding-top: 94px;
-	// padding-bottom: 94px;
-	// @media screen and (min-width:480px) {
-	// 	width:480px;		
-	// }
-	
+.clients {	
 	padding: 60px 0;
+	@include media(1200px){
+		padding-top: 94px;
+			padding-bottom: 94px;
+	}
 }
 
-.client__box {
-	// display: flex;
-	// justify-content: center;
-}
+.client__box {}
 
 .clients__title {
 	font-weight: 700;
@@ -54,6 +49,7 @@
 
 	@include media(1200px){
 		@include calc(6);
+		
 	}
 	// &:not(:last-child) {
 	// 		margin-right: 30px;
@@ -74,6 +70,9 @@
 	transition-property: background-color;
 	transition-duration: 250ms;
 
+	@include media(1200px){
+		min-height: 92px;
+	}
 
 &:hover,
 &:focus {

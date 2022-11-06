@@ -1138,6 +1138,11 @@ address {
     margin: -1px;
   }
 }
+@media screen and (min-width: 1200px) {
+  .section {
+    padding-top: 0;
+  }
+}
 
 .section__list {
   display: -webkit-box;
@@ -1314,6 +1319,12 @@ address {
 .clients {
   padding: 60px 0;
 }
+@media screen and (min-width: 1200px) {
+  .clients {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+}
 
 .clients__title {
   font-weight: 700;
@@ -1378,6 +1389,11 @@ address {
   transition-property: background-color;
   -webkit-transition-duration: 250ms;
           transition-duration: 250ms;
+}
+@media screen and (min-width: 1200px) {
+  .client__link {
+    min-height: 92px;
+  }
 }
 .client__link:hover, .client__link:focus {
   border: 1px solid #2196f3;
@@ -1556,6 +1572,12 @@ address {
     padding-top: 60px;
   }
 }
+@media screen and (min-width: 1200px) {
+  .subscribe {
+    padding: 0;
+  }
+}
+
 .subscribe__text {
   margin-bottom: 20px;
   font-weight: 700;
