@@ -63,14 +63,14 @@
           </svg>
         </button> 
       </div>      
-        <div class="mob-menu is-hidden" data-menu>
-          <div class="container-mob">
+        <div class="mob-menu visually-hidden" data-menu>
+          <div class="container">
           <button type="button" class="menu-cross-btn" data-menu-close>
             <svg class="mob__icon-cross" width="40" height="40">
             <use href="/img/symbol-defs.svg#icon-cross">
               </use>
             </svg>
-          </button>
+          </button>          
           <div class="mob-menu-top">
           <ul class="mob-menu__list">
             <li class="mob-menu__item">
@@ -83,6 +83,8 @@
               <a class="mob-menu__link" href="#">Контакти</a>
             </li>
           </ul>
+          </div>
+          <div class="mob-menu-bottom">
             <ul class="mob-contact">
             <li class="mob-menu__item">
               <a class="mob-menu__link" href="tel:+380961111111">+38 096 111 11 11</a>
@@ -91,9 +93,7 @@
               <a class="mob-menu__link mob-menu__link--smoll " href="mailto:info@devstudio.com">
                 info@devstudio.com</a>
             </li>
-          </ul> 
-        </div>
-        <div class="mob-menu-bottom">        
+          </ul>               
           <ul class="mob-soc">
             <li class="mob-soc__item">
               <a href="#" class="mob-soc__link">Instagram</a>
@@ -597,7 +597,7 @@
         </div>
 
       </div>
-    </footer>
+    </footer>    
     <script src="./js/modal.js"></script>
     <script src="./js/menu.js"></script>
   </body>

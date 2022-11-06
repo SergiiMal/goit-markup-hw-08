@@ -1,48 +1,51 @@
 .page-header{
 	display: flex;
 	align-items: center;
+	
+}
 
-@include media(480px){
 .menu-open-btn{
-	display: block;
-		margin-left: auto;
-		background-color: transparent;
+	// display: block;
+	margin-left: auto;
+	// top: 0;
+	// right: 0;
+	background-color: transparent;
 	border: none;
 	background-color:white;
+
+@include media (768px){
+	display: none;
 }
 } 
-
-.container-mob{
-	width: 100%;
-	padding: 10px 15px;
-	margin: 0 auto;
-}
-
 .mob-menu {
 	position:fixed;
-	top: 0;
-	right: 0;
+	top: 0;	
 	background-color: $primariBgColor;
 	width: 100vw;
 	height: 100vh;
 	z-index: 1;
-	> .container-mob{
-		// height: 100%;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	>.container {
+		height: 100%;
 		display: flex;
 			flex-direction: column;
 			justify-content: space-between;
 			overflow: auto;
 	}
-	// padding-top: 10px;
-	// padding-bottom: 10px;
+		@include media (768px) {
+			display: none;
+		}
+	
 }
 
 .menu-cross-btn {
+	
 	display: block;
 	margin-left: auto;
 	background-color:transparent;
 	border: none;	
-	// padding: 10px 15px;
+	
 
 	&:hover .mob__icon-cross,
 		&:focus .mob__icon-cross {
@@ -50,10 +53,13 @@
 			transition: $timingFunction;
 		}
 }
+.mob__icon-cross{
+	display: block;
+}
 
 .mob-menu__list {
 	margin-bottom: 302px;
-	padding-left: 25px;
+	padding-left: 25px;	
 }
 
 .mob-menu__item:not(:last-child) {
@@ -66,12 +72,14 @@
 		letter-spacing: 0.02em;
 		color: $titleColor;
 		transition: $timingFunction;
+		
 
 		&:hover,
 		&:focus{
 			color: $accentColor;
 		}
 }
+
 .mob-menu__link--smoll{
 	font-size: 24px;
 	line-height: 1.16;
@@ -108,5 +116,5 @@
 	letter-spacing: 0.02em;
 	color: $accentColor;
 	transition: $timingFunction;
-}
+	
 }
