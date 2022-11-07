@@ -9,7 +9,7 @@
 	margin-left: auto;	
 	background-color: transparent;
 	border: none;
-	// background-color:white;
+	background-color:white;
 	
 
 @include media (768px){
@@ -51,9 +51,10 @@
 			fill: $accentColor;
 			transition: $timingFunction;
 		}
+		
 }
 .mob__icon-cross{
-	// display: block;	
+	display: block;	
 	fill: $titleColor;
 }
 

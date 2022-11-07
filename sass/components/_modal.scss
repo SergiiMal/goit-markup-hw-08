@@ -38,7 +38,7 @@
 &:hover,
 &:focus {
 	border-color:$accentColor;
-	transition: opacity background-color$timingFunction;
+	transition: opacity  background-color$timingFunction;
 }
 
 &:hover .modal__icon-close,
