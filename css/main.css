@@ -1394,11 +1394,13 @@ address {
 @media screen and (min-width: 768px) {
   .client__item {
     width: calc((100% - 60px) / 3);
+    height: 92px;
   }
 }
 @media screen and (min-width: 1200px) {
   .client__item {
     width: calc((100% - 150px) / 6);
+    height: 92px;
   }
 }
 

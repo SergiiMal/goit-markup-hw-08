@@ -40,10 +40,12 @@
 
 	@include media(768px){
 	@include calc(3);
+	height: 92px;
 	}
 
 	@include media(1200px){
 		@include calc(6);
+		height: 92px;
 		
 	}	
 }
