@@ -34,24 +34,18 @@
 }
 
 
-.client__item {
-	// width: 210px;	
-	height: 92px;
-	
-		@include calc(2);
-	
-	// width: calc((100% - 2 * 30px) / 1);
+.client__item {		
+	min-height: 92px;	
+	@include calc(2);	
+
 	@include media(768px){
-		@include calc(3);
+	@include calc(3);
 	}
 
 	@include media(1200px){
 		@include calc(6);
 		
-	}
-	// &:not(:last-child) {
-	// 		margin-right: 30px;
-	// 	}
+	}	
 }
 
 .client__link {
@@ -66,11 +60,9 @@
 	border-radius: 4px;
 
 	transition-property: background-color;
-	transition-duration: 250ms;
-
-	@include media(1200px){
-		min-height: 92px;
-	}
+	transition-duration: 250ms;	
+	min-height: 92px;
+	
 
 &:hover,
 &:focus {
