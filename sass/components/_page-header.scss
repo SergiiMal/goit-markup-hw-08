@@ -49,7 +49,7 @@
 &:hover,
 	&:focus {
 		border-color: $primariBgColor;
-		transition: opacity background-color$timingFunction;
+		transition: opacity $timingFunction;
 	}
 
 	&:hover .mob__icon-cross,
@@ -60,7 +60,7 @@
 
 }
 .mob__icon-cross{
-	display: block;	
+	// display: block;	
 	fill: $titleColor;
 }
 
