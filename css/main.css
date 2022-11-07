@@ -362,23 +362,31 @@ address {
   }
 }
 
-.mob__icon-cross,
+.menu-open-btn {
+  display: block;
+  background-color: #fff;
+}
+.menu-open-btn:hover, .menu-open-btn:focus {
+  border-color: #f5f5f5;
+  -webkit-transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.menu-open-btn .mob__icon-open {
+  fill: #212121;
+}
+
 .menu-cross-btn {
   display: block;
   margin-left: auto;
   background-color: transparent;
   border: none;
 }
-.mob__icon-cross:hover, .mob__icon-cross:focus,
-.menu-cross-btn:hover,
-.menu-cross-btn:focus {
+.menu-cross-btn:hover, .menu-cross-btn:focus {
   border-color: #f5f5f5;
   -webkit-transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.mob__icon-cross:hover .mob__icon-cross, .mob__icon-cross:focus .mob__icon-cross,
-.menu-cross-btn:hover .mob__icon-cross,
-.menu-cross-btn:focus .mob__icon-cross {
+.menu-cross-btn:hover .mob__icon-cross, .menu-cross-btn:focus .mob__icon-cross {
   fill: #2196f3;
   -webkit-transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);

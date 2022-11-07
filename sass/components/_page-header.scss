@@ -37,10 +37,20 @@
 		}
 	
 }
+.menu-open-btn{
+	display: block;
+	background-color: #fff;
+	&:hover,
+		&:focus {
+			border-color: $primariBgColor;
+			transition: opacity $timingFunction;
+		}
+		.mob__icon-open{
+			fill:$titleColor;
+		}
+}
 
-.mob__icon-cross,
-.menu-cross-btn {
-	
+.menu-cross-btn {	
 	display: block;
 	margin-left: auto;
 	background-color:transparent;
@@ -59,8 +69,7 @@
 		}
 
 }
-.mob__icon-cross{
-	// display: block;	
+.mob__icon-cross{		
 	fill: $titleColor;
 }
 
