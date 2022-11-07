@@ -38,6 +38,7 @@
 	
 }
 
+.mob__icon-cross,
 .menu-cross-btn {
 	
 	display: block;
@@ -45,13 +46,18 @@
 	background-color:transparent;
 	border: none;	
 	
+&:hover,
+	&:focus {
+		border-color: $primariBgColor;
+		transition: opacity background-color$timingFunction;
+	}
 
 	&:hover .mob__icon-cross,
 		&:focus .mob__icon-cross {
 			fill: $accentColor;
 			transition: $timingFunction;
 		}
-		
+
 }
 .mob__icon-cross{
 	display: block;	

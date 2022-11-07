@@ -362,13 +362,23 @@ address {
   }
 }
 
+.mob__icon-cross,
 .menu-cross-btn {
   display: block;
   margin-left: auto;
   background-color: transparent;
   border: none;
 }
-.menu-cross-btn:hover .mob__icon-cross, .menu-cross-btn:focus .mob__icon-cross {
+.mob__icon-cross:hover, .mob__icon-cross:focus,
+.menu-cross-btn:hover,
+.menu-cross-btn:focus {
+  border-color: #f5f5f5;
+  -webkit-transition: opacity background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: opacity background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.mob__icon-cross:hover .mob__icon-cross, .mob__icon-cross:focus .mob__icon-cross,
+.menu-cross-btn:hover .mob__icon-cross,
+.menu-cross-btn:focus .mob__icon-cross {
   fill: #2196f3;
   -webkit-transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
