@@ -9,7 +9,7 @@
 .clients__title {
 	font-weight: 700;
 	font-size: 28px;
-		line-height: 1.17;
+	line-height: 1.17;
 	text-align: center;
 	letter-spacing: 0.03em;
 
@@ -35,7 +35,7 @@
 
 
 .client__item {		
-	min-height: 92px;	
+	height: 92px;	
 	@include calc(2);	
 
 	@include media(768px){

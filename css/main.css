@@ -1388,7 +1388,7 @@ address {
 }
 
 .client__item {
-  min-height: 92px;
+  height: 92px;
   width: calc((100% - 30px) / 2);
 }
 @media screen and (min-width: 768px) {
