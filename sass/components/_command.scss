@@ -89,7 +89,7 @@
 }
 
 .command__item {
-	background-color: $primariBgColor;
+	background-color: #fff;;
 }
 
 .command__link {
@@ -101,7 +101,7 @@
 	align-items: center;
 	justify-content: center;
 	margin-right: 10px;
-	color: #afb1b8;
+	color: #AFB1B8;
 
 	transition-property: background-color;
 	transition-duration: 250ms;
@@ -122,4 +122,5 @@
 
 .command__icon {
 	fill: currentColor;
+	
 }
