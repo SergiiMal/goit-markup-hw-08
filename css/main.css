@@ -442,8 +442,8 @@ address {
   color: #757575;
 }
 
-.mob-menu-top {
-  margin-bottom: 100px;
+.mob-menu-bottom {
+  margin-top: auto;
 }
 
 .mob-contact {
