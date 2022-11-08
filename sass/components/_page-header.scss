@@ -11,11 +11,20 @@
 	border: none;
 	background-color:white;
 	
-
-@include media (768px){
-	display: none;
+@media screen and (min-width:767px)and (max-width:3000px) {	
+	   position: absolute;
+		white-space: nowrap;
+		width: 1px;
+		height: 1px;
+		overflow: hidden;
+		border: 0;
+		padding: 0;
+		clip: rect(0 0 0 0);
+		clip-path: inset(50%);
+		margin: -1px;
 }
 } 
+
 .mob-menu {
 	position:fixed;
 	top: 0;	
@@ -25,16 +34,16 @@
 	z-index: 1;
 	padding-top: 10px;
 	padding-bottom: 10px;
-	>.container {
+	> .container {
 		height: 100%;
 		display: flex;
 			flex-direction: column;
 			justify-content: space-between;
 			overflow: auto;
 	}
-		// @include media (768px) {
-		// 	display: none;
-		// }
+		@include media (767px) {
+			display: none;
+		}
 	
 }
 .menu-open-btn{
@@ -59,7 +68,7 @@
 	
 &:hover,
 	&:focus {
-		// border-color: $accentColor;
+		border-color: $accentColor;
 		transition: $timingFunction;
 	}
 

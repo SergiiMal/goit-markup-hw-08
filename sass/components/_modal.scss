@@ -41,11 +41,11 @@
 	transition: opacity  background-color $timingFunction;
 }
 
-// &:hover .modal__icon-close,
-// &:focus .modal__icon-close {
-// 	fill: $accentColor;
-// 	transition: $timingFunction;
-// }
+&:hover .modal__icon-close,
+&:focus .modal__icon-close {
+	fill: $accentColor;
+	transition: $timingFunction;
+}
 }
 .modal__icon-close {
 	fill: $titleColor;
