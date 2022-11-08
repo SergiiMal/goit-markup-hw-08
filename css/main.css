@@ -481,14 +481,21 @@ address {
 
 .logo {
   margin-right: 93px;
-  padding-top: 24px;
-  padding-bottom: 25px;
+  padding-top: 16px;
+  padding-bottom: 16px;
   font-family: "Raleway", sans-serif;
-  font-size: 26px;
+  font-size: 24px;
   line-height: 1.19;
   letter-spacing: 0.03em;
   text-decoration: none;
   color: #2196f3;
+}
+@media screen and (min-width: 1200px) {
+  .logo {
+    padding-top: 25px;
+    padding-bottom: 25px;
+    font-size: 26px;
+  }
 }
 
 .logo__span {
