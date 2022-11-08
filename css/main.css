@@ -368,10 +368,11 @@ address {
 }
 .menu-open-btn:hover, .menu-open-btn:focus {
   border-color: #f5f5f5;
-  -webkit-transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  -webkit-transition: opacity backgraund-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: opacity backgraund-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.menu-open-btn .mob__icon-open {
+
+.mob__icon-open {
   fill: #212121;
 }
 
@@ -382,7 +383,6 @@ address {
   border: none;
 }
 .menu-cross-btn:hover, .menu-cross-btn:focus {
-  border-color: #f5f5f5;
   -webkit-transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -415,6 +415,8 @@ address {
 }
 .mob-menu__link:hover, .mob-menu__link:focus {
   color: #2196f3;
+  -webkit-transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .mob-menu__link--accent {
@@ -800,14 +802,9 @@ address {
   -webkit-transition: opacity background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: opacity background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.modal__btn-close:hover .modal__icon-close, .modal__btn-close:focus .modal__icon-close {
-  fill: #2196f3;
-  -webkit-transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
 
 .modal__icon-close {
-  fill: #000000;
+  fill: #212121;
 }
 
 .overlay {

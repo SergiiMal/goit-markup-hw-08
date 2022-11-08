@@ -43,12 +43,13 @@
 	&:hover,
 		&:focus {
 			border-color: $primariBgColor;
-			transition: opacity $timingFunction;
+			transition: opacity backgraund-color $timingFunction;
+		}
 		}
 		.mob__icon-open{
 			fill:$titleColor;
 		}
-}
+
 
 .menu-cross-btn {	
 	display: block;
@@ -58,7 +59,7 @@
 	
 &:hover,
 	&:focus {
-		border-color: $primariBgColor;
+		// border-color: $accentColor;
 		transition: $timingFunction;
 	}
 
@@ -95,6 +96,7 @@
 		&:hover,
 		&:focus{
 			color: $accentColor;
+			transition: $timingFunction;
 		}
 }
 .mob-menu__link--accent{
