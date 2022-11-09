@@ -1,8 +1,8 @@
 @mixin font($fw, $fs, $lh, $ls) {
-	font-weight: 700;
-	font-size: 16px;
-	line-height: 1.88;		
-	letter-spacing: 0.06em;
+	font-weight: $fw;
+	font-size:$fs;
+	line-height: $lh;		
+	letter-spacing: $ls;
 }
 
 @mixin media($size){

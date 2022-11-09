@@ -416,7 +416,7 @@ address {
 }
 
 .mob-menu__link {
-  font-weight: 700;
+  font-weight: 500;
   font-size: 40px;
   line-height: 1.17;
   letter-spacing: 0.02em;
@@ -431,7 +431,8 @@ address {
 }
 
 .mob-menu__link--accent {
-  font-weight: normal;
+  font-weight: 500;
+  font-size: 34px;
   color: #2196f3;
 }
 
@@ -1176,11 +1177,14 @@ address {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;
+  text-align: center;
   text-transform: uppercase;
 }
 @media screen and (min-width: 768px) {
   .feature__title {
-    text-align: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
   }
 }
 

@@ -93,7 +93,7 @@
 }
 
 .mob-menu__link {	
-		font-weight: 700;
+		font-weight: 500;
 		font-size: 40px;
 		line-height: 1.17;		
 		letter-spacing: 0.02em;
@@ -108,7 +108,8 @@
 		}
 }
 .mob-menu__link--accent{
-	font-weight: normal;
+	font-weight: 500;
+	font-size: 34px;
 	color: $accentColor;
 }
 
