@@ -1,15 +1,29 @@
 .filter {
-	padding-top: 94px;
-	padding-bottom: 94px;
+	// padding-top: 94px;
+	// padding-bottom: 94px;
+	margin-top: 60px;
+		margin-bottom: 60px;
 }
 
 .filter .list {
 	display: flex;
-	justify-content: center;
-	margin-bottom: 50px;
+	flex-wrap:wrap;
+	gap: 8px;
+	margin-bottom: 46px;
+	@include  media(1200px) {
+		justify-content: center;
+			margin-bottom: 50px;
+	}
+	
+	
 }
 
-
+.filter .list .items:nth-child(3) {
+	margin-right: 30px;
+	@include media(768px){
+		margin: 0;
+	}
+}
 
 .filter .list .item {
 	padding: 6px 22px;
@@ -25,13 +39,11 @@
 	border-radius: 4px;
 
 	transition-property: background-color;
-	transition-duration: 250ms;
-	
-	
+	transition-duration: 250ms;	
 }
- .filter .list .items:not(:last-child) {
-	margin-right: 8px;
-}
+//  .filter .list .items:not(:last-child) {
+// 	margin-right: 8px;
+// }
 
 .list .item.current {
 	border: none;

@@ -1771,18 +1771,35 @@ address {
 }
 
 .filter {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  margin-top: 60px;
+  margin-bottom: 60px;
 }
 
 .filter .list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  margin-bottom: 50px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 46px;
+}
+@media screen and (min-width: 1200px) {
+  .filter .list {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-bottom: 50px;
+  }
+}
+
+.filter .list .items:nth-child(3) {
+  margin-right: 30px;
+}
+@media screen and (min-width: 768px) {
+  .filter .list .items:nth-child(3) {
+    margin: 0;
+  }
 }
 
 .filter .list .item {
@@ -1799,10 +1816,6 @@ address {
   transition-property: background-color;
   -webkit-transition-duration: 250ms;
           transition-duration: 250ms;
-}
-
-.filter .list .items:not(:last-child) {
-  margin-right: 8px;
 }
 
 .list .item.current {
