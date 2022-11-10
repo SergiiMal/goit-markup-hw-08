@@ -47,10 +47,7 @@
 	
 		@include media(1200px) {
 			@include calc(4);
-		}
-	// &:not(:last-child) {
-	// 		margin-right: 30px;
-	// 	}
+		}	
 }
 .command__list {
 	display: flex;	

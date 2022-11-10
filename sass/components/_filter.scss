@@ -1,8 +1,13 @@
 .filter {
 	// padding-top: 94px;
 	// padding-bottom: 94px;
-	margin-top: 60px;
-		margin-bottom: 60px;
+	padding-top: 60px;
+		padding-bottom: 60px;
+
+		@include media (1200px) {
+				padding-top: 94px;
+					padding-bottom: 94px;
+			}
 }
 
 .filter .list {
@@ -10,11 +15,16 @@
 	flex-wrap:wrap;
 	gap: 8px;
 	margin-bottom: 46px;
+
+	@include media(768px) {
+		margin-bottom: 30px;
+		justify-content: center;
+	}
+
 	@include  media(1200px) {
 		justify-content: center;
-			margin-bottom: 50px;
-	}
-	
+		margin-bottom: 50px;
+	}	
 	
 }
 
