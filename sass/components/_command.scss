@@ -10,13 +10,9 @@
 
 .commands__title {
 	margin-bottom: 30px;
-
-	font-weight: 700;
-	font-size: 28px;
-	line-height: 1.17;	
+	@include font(700,28,33,0.03);
 	text-align: center;
-	letter-spacing: 0.03em;
-
+	
 	@include media (1200px){
 		margin-bottom: 50px;
 
@@ -63,12 +59,9 @@
 }
 
 .command__name {
-	font-weight: 500;
-	font-size: 16px;
-	line-height: 1.18;
+	@include font(500,16,19,0.03);
 	text-align: center;
-	letter-spacing: 0.03em;
-
+	
 	margin-bottom: 10px;
 	padding-top: 30px;
 
@@ -76,12 +69,9 @@
 }
 
 .command__profession {
-	font-size: 16px;
-	line-height: 1.18;
-	letter-spacing: 0.03em;
+	@include font (400,16,19,0.03);
 	text-align: center;
-	margin-bottom: 16px;
-
+	
 	color: $primaryColor;
 }
 

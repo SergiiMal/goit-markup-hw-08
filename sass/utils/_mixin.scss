@@ -1,8 +1,8 @@
-@mixin font($fw, $fs, $lh, $ls) {
+@mixin font($fw:500, $fs:42, $lh:32, $ls:0.02) {
 	font-weight: $fw;
-	font-size:$fs;
-	line-height: $lh;		
-	letter-spacing: $ls;
+	font-size:$fs+px;
+	line-height: ($lh / $fs);		
+	letter-spacing: $ls+em;
 }
 
 @mixin media($size){
@@ -14,6 +14,7 @@
 @mixin calc ($count){
 	width:calc((100% - 30px * ($count - 1 )) / $count);
 }
+
 @mixin retina {
 	@media (min-device-pixel-ratio: 2),
 		(min-resolution: 192dpi),
@@ -21,4 +22,3 @@
 			@content;
 		}
 }
-

@@ -93,10 +93,7 @@
 }
 
 .mob-menu__link {	
-		font-weight: 500;
-		font-size: 40px;
-		line-height: 1.17;		
-		letter-spacing: 0.02em;
+		@include font (500,40,47,0.02);
 		color: $titleColor;
 		transition: $timingFunction;
 		
@@ -108,21 +105,17 @@
 		}
 }
 .mob-menu__link--current{
-	font-weight: 500;
-	font-size: 40px;	
+	@include font(null,40,47,0.02);	
 	color: $accentColor;
 }
 
-.mob-menu__link--accent{
-	font-weight: 500;
-	font-size: 34px;
+.mob-menu__link--accenttel{
+	@include font(500,34,40,0.02);
 	color: $accentColor;
 }
 
-.mob-menu__link--smoll{
-	font-size: 24px;
-	line-height: 1.16;
-	letter-spacing: 0.02em;
+.mob-menu__link--smollposht{
+	@include font(null,24,28);
 	color: $primaryColor;	
 }
 
@@ -154,10 +147,7 @@
 
 .mob-soc__link {
 	position: relative;
-	font-size: 18px;
-	line-height: 1.22;		
-	
-	letter-spacing: 0.02em;
+	@include font(500,18,22);
 	color: $accentColor;
 	transition: $timingFunction;
 	
