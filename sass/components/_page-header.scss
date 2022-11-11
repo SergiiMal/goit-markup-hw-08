@@ -93,7 +93,7 @@
 }
 
 .mob-menu__link {	
-		@include font (500,40,47,0.02);
+		@include font (500, 40, 47, 0.02);
 		color: $titleColor;
 		transition: $timingFunction;
 		
@@ -105,12 +105,12 @@
 		}
 }
 .mob-menu__link--current{
-	@include font(null,40,47,0.02);	
+	@include font(null, 40, 47, 0.02);	
 	color: $accentColor;
 }
 
 .mob-menu__link--accenttel{
-	@include font(500,34,40,0.02);
+	@include font(500, 34, 40, 0.02);
 	color: $accentColor;
 }
 
